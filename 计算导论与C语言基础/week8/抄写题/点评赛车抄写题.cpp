@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int best;
+    for(best=1;best<=4;best++)
+    {
+        bool a=(best==2);
+        bool b=(best==4);
+        bool c=!(best==3);
+        bool d=!b;
+        if(a+b+c+d!=1)
+        {
+            continue;//不符合只有一位专家说对的条件，然后输出最佳的车
+        }
+        cout<<best<<endl;
+        if(a==1)
+        cout<<"A"<<endl;
+        if(b==1)
+        cout<<"B"<<endl;
+        if(c==1)
+        cout<<"C"<<endl;
+        else
+        cout<<"D"<<endl;
+    }
+    return 0;
+}
