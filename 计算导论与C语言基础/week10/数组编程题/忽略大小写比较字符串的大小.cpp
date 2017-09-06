@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    char s1[80],s2[80],result;
+    char s1[80],s2[80],result,a;
     cin.getline(s1,80);
     cin.getline(s2,80);
     for(int i=0;s1[i]!='\0';i++)
