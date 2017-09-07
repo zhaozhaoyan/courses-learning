@@ -1,34 +1,27 @@
 #include<iostream>
+#include<string.h>
 using namespace std;
 int main()
 {
-    char s[500];
+    char s[500]={},best[100]={};
     cin.getline(s,500);
-    int len=0,len1=0,best=0,best1=0;
-    for(int i=0;s[i]!='.';i++)
+    int start=0,max=0,len,end;
+    len=strlen(s);
+    for(int i=0;i<len;i++)
     {
-        if(s[i]!=' ')
+        if((s[i]==' ')||(s[i]=='.'))
         {
-            len1++;
-        }
-        else
-        {
-            if(len1>len)
+            end=i;
+            if(max<end-start)
             {
-                len=len1;
-                best=best1;
+                max=end-start;
+                s[end]='\0';
+                strcpy(best,&s[start]);
             }
-            best1=i+1;
-            len1=0;
+            start=++i;
         }
+
     }
-    if(len1>len)
-    {
-        best=best1;
-    }
-    for(best;s[best]!=' '&&s[best]!='.';best++)
-    {
-        cout<<s[best];
-    }
+    cout<<best<<endl;
     return 0;
 }
