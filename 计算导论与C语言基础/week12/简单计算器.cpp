@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int a,b,result;
+    int a,b,r;
     cin>>a>>b;
     char c;
     cin>>c;
@@ -18,10 +18,10 @@ int main()
     {
         switch(c)
         {
-            case'+':result=a+b;cout<<result<<endl;break;
-            case'-':result=a-b;cout<<result<<endl;break;
-            case'*':result=a*b;cout<<result<<endl;break;
-            case'/':result=a/b;cout<<result<<endl;break;
+            case'+':r=a+b;cout<<r<<endl;break;
+            case'-':r=a-b;cout<<r<<endl;break;
+            case'*':r=a*b;cout<<r<<endl;break;
+            case'/':r=a/b;cout<<r<<endl;break;
         }
     }
     return 0;
