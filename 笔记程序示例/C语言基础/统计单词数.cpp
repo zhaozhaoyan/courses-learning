@@ -17,6 +17,6 @@ int main()
       num++;
     }
   }
-  cout<<"字符串中有"<<num<<"个单词"<<endl;
+  cout<<"字符串中有"<<num<<"个"<<endl;
   return 0;
 }
