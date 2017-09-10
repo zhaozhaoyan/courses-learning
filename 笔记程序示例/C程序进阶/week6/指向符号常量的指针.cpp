@@ -4,7 +4,7 @@ int sum(const int array[],int n)//加了一个关键字，
 {
   for(int i=0;i<10-1;i++)
   {
-    *(array+1)=*array+*(array+1);//此句程序有错误，“array”不能给常量赋值
+    *(array+1)=*array+*(array+1);//此句程序有误，“array”不能给常量赋值
     array++;
   }
   return *array;

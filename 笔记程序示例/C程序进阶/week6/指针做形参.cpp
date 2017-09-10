@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int sum(int array[],int n)//c++将形参数组名作为指针变量来处理!
+int sum(int array[],int n)//c++中将形参数组名作为指针变量来处理!
 {
   for(int i=0;i<10-1;i++)
   {

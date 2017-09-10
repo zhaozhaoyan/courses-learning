@@ -2,12 +2,12 @@
 using namespace std;
 void sum(int *p,int n)
 {
-  int total=0;
+  int tota=0;
   for(int i=0;i<n;i++)
   {
-    total+=*p++;
+    tota+=*p++;
   }
-  cout<<total<<endl;
+  cout<<tota<<endl;
 }
 int main()
 {

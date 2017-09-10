@@ -8,7 +8,7 @@ int *getInt1()
 int main()
 {
   int *p;
-  p=getInt1();//p指向了value1
+  p=getInt1();//p指向value1
   cout<<*p<<endl;
   return 0;//返回的值是非常不稳定的
 }

@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int *get(int arr[][4],int n,int m)//或者 int(*arr)[4]
+int *get(int arr[][4],int n,int m)//或int(*arr)[4]
 {
   int *pt;
   pt=*(arr+n-1)+m-1;

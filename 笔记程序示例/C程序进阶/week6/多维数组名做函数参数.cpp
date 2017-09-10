@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int maxvalue(int (*p)[4])//定义了变量p，p和a的含义一样，a是指向二维数组中第一个小数组的指针
+int maxvalue(int (*p)[4])//定义变量p，p和a的含义一样，a是指向二维数组中第一个小数组的指针
 {
   int max=p[0][0];
   for(int i=0;i<3;i++)
