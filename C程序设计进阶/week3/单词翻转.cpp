@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int i=0;//单词
+int i=0;//单词翻转，根据视频里面的举例
 char input[500];
 int recur()
 {
