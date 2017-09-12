@@ -1,26 +1,23 @@
 #include<iostream>
 using namespace std;
-char boy;
-int paidui(char str[],int s)//开始位置s
+int paidui(char str[],int n)//开始位置n
 {
-  int n;
-  if(str[s]!=boy)
+  char boy=str[0];
+  if(str[n]!=boy)//
   {
-    return s;
+    return n;//判断第n个是否为男孩，不是则返回n
   }
   else
   {
-    n=paidui(str,s+1);
-    cout<<s<<' '<<n<<endl;
-    return paidui(str,n+1);
+    int girl=paidui(str,n+1);
+    cout<<n<<' '<<girl<<endl;
+    return paidui(str,girl+1);
   }
 }
 int main()
 {
-  char str[101]={0};
+  char str[100]={0};
   cin>>str;
-  boy=str[0];
-  int n=paidui(str,1);
-  cout<<"0 "<<n<<endl;
+  paidui(str,0);
   return 0;
 }
