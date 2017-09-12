@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int i=0;
+int i=0;//单词
 char input[500];
 int recur()
 {
