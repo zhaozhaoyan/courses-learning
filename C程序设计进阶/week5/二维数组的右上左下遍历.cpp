@@ -14,10 +14,10 @@ int main()
   }
   for(int i=0;i<(row+col-1);i++)//从每个的打印输出的坐标位置找规律
   {
-    for(int j=0;j<row&&j<=i;j++)
+    for(int j=i;j>=0;j--)
     {
-      if(i-j<col&&i-j>=0)
-      cout<<array[j][i-j]<<endl;
+      if(j<col&&i-j<row)
+      cout<<array[i-j][j]<<endl;
     }
   }
   return 0;
