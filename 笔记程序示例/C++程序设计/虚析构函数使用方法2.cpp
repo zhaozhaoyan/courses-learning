@@ -14,8 +14,10 @@ class Shape
 {
   public:
     Shape();
-    ~Shape();//虚析构函数，避免内存泄漏，记得把其他的也加上
-    double calcArea();//实现了多态，注意要在其他两个也加上virtual关键字
+    //~Shape();//虚析构函数，避免内存泄漏，记得把其他的也加上
+    //double calcArea();//实现了多态，注意要在其他两个也加上virtual关键字
+    virtual ~Shape();
+    virtual double calcArea();
 };
 Shape::Shape()//构造函数
 {
@@ -51,13 +53,13 @@ Circle::~Circle()
 int main()
 {
   Shape shape;
-  //cout<<sizeof(shape)<<endl;
+  cout<<sizeof(shape)<<endl;
   int *p=(int *)&shape;
-  cout<<p<<endl;
+  //cout<<p<<endl;
   Circle circle(100);
   int *q=(int *)&circle;
   cout<<q<<endl;
-  cout<<(unsigned int)(*q)<<endl;
-  //cout<<sizeof(circle)<<endl;
+  //cout<<(unsigned int)(*q)<<endl;
+  cout<<sizeof(circle)<<endl;
   return 0;
 }
